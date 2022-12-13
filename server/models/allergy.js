@@ -4,7 +4,7 @@ const symptomsSchema = new mongoose.Schema({
   symptom: String,
 });
 
-const vaccineSchema = new mongoose.Schema({
+const allergySchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -16,4 +16,4 @@ const vaccineSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Vaccine", vaccineSchema);
+module.exports = mongoose.model("Allergy", allergySchema);
